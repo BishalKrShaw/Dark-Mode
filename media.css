@@ -1,0 +1,21 @@
+@media (max-width: 1024px) {
+    
+    #hero-section{
+        flex-direction: column;
+        gap: 80px;
+    }
+    #hero-section>.row{
+        text-align: center;
+    }
+}
+
+@media (max-width: 770px) {
+
+    #menu>#menu-button{
+        display: block;
+    }
+
+    nav>#menu>a{
+        display: none;
+    }
+}

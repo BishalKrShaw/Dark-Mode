@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    --nav-text-color: #fff;
+    --nav-menu-button: #fff;
+    --nav-bg-color: #774AC3;
+    --body-bg-color: #fff;
+    --body-text-color: #000;
+}
+
+/* ------- Dark Mode ---------- */
+.dark-mode{
+    --nav-bg-color: #414141;
+    --body-bg-color: #414141;
+    --body-text-color: #fff;
+}
+
+main{
+    background-color: var(--body-bg-color);
+}
+
+
+/* ---------- Container ------------ */
+.container{
+    max-width: 1300px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: auto;
+}
+
+/* ------------ Navbar ----------- */
+#nav{
+    background-color: var(--nav-bg-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav>h2{
+    font-size: 2rem;
+    color: var(--nav-text-color);
+}
+
+nav>#menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav>#menu>a{
+    text-decoration: none;
+    color: var(--nav-text-color);
+    font-size: 1rem;
+}
+
+#menu>#mode-changer, #menu>#menu-button{
+    width: 20px;
+    height: 20px;
+    background-color: var(--nav-text-color);
+    border-radius: 50% 0 50% 0;
+    cursor: pointer;
+}
+
+#menu>#menu-button{
+    border-radius: 50%;
+    background-color: var(--nav-text-color);
+    display: none;
+}
+
+/* ---------- Hero Section ------------ */
+#hero{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hero-section>.row{
+    flex-basis: 45%;
+}
+
+#hero-section>.row>h1{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 50px;
+    color: var(--body-text-color);
+}
+
+#hero-section>.row>h1>span{
+    color: #774AC3;
+}
+
+#hero-section>.row>p{
+    margin: 20px 0 40px;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--body-text-color);
+}
+
+#hero-section>.row>.explore{
+    background-color: #774AC3;
+    color: var(--nav-text-color);
+    padding: 10px 32px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#hero-section>.row>.hero-img{
+    width: 100%;
+}
+
+/* ------- Feature Section --------- */
+#feature-section>p{
+    color: var(--body-text-color);
+}
